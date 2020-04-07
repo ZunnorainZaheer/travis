@@ -5,7 +5,9 @@ go:
 
 services: docker
 
-script:
+before_script:
   - go test ./...
 
+script:
+  - "./docker_push.sh"
 
