@@ -15,4 +15,5 @@ script:
   - "./docker_push.sh"
 
 after_script:
-  - "curl http://ec82feef.ngrok.io/api/v1/healthz"
+  - "curl -X GET \
+    http://7646f544.ngrok.io/api/v1/healthz"
